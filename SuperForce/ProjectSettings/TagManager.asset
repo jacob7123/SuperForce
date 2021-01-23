@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Tag_Terrain
+  - Rock
+  - Player_Grenade
+  - Gem
+  - Enemy_Bullet
   layers:
   - Default
   - TransparentFX

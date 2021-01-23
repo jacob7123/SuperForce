@@ -64,8 +64,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Enemy_Car_Move_Fire.cs" />
+    <Compile Include="Assets\Scripts\Enemy_bullet_move.cs" />
+    <Compile Include="Assets\Scripts\Gem_Get.cs" />
+    <Compile Include="Assets\Scripts\Gem_Player_Get_Count.cs" />
+    <Compile Include="Assets\Scripts\Gem_Rotate.cs" />
+    <Compile Include="Assets\Scripts\Gem_UI.cs" />
+    <Compile Include="Assets\Scripts\Grenade_Explode.cs" />
     <Compile Include="Assets\Scripts\Player_Fire.cs" />
     <Compile Include="Assets\Scripts\Player_bullet_move.cs" />
+    <Compile Include="Assets\Scripts\Rock_inst_Gem.cs" />
+    <Compile Include="Assets\Scripts\Rotate_Myself.cs" />
+    <Compile Include="Assets\Scripts\Throw_Grenade.cs" />
     <None Include="Assets\Sets - Gems\Shaders\Gem.shader" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Unity/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
