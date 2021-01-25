@@ -9,9 +9,17 @@ public class Enemy_Car_Move_Fire : MonoBehaviour
     public GameObject Fire_Point;
     public GameObject Fire_Particle;
     public int Fire_Y = 5;
-    public int Fire_Z = 50;
+    public int Fire_Z = 30;
     private float Distance;
     private float i;
+
+    public int Move_Distance_Num = 100;
+    public int Fire_Distance_Num = 70;
+
+    public GameObject Tire1;
+    public GameObject Tire2;
+    public GameObject Tire3;
+    public GameObject Tire4;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +30,15 @@ public class Enemy_Car_Move_Fire : MonoBehaviour
     void Update()
     {
         Distance = Vector3.Distance(transform.position, Player.transform.position);
-        if(Distance < 100)
+        if(Distance < Move_Distance_Num)
         {
+            Tire1.GetComponent<Rotate_Myself>().enabled = true;
+            Tire2.GetComponent<Rotate_Myself>().enabled = true;
+            Tire3.GetComponent<Rotate_Myself>().enabled = true;
+            Tire4.GetComponent<Rotate_Myself>().enabled = true;
             transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, 0.05f);
             transform.LookAt(Player.transform);
-            if (Distance < 70)
+            if (Distance < Fire_Distance_Num)
             {
                 i += Time.deltaTime;
                 if (i > 1)
@@ -37,6 +49,13 @@ public class Enemy_Car_Move_Fire : MonoBehaviour
                     i = 0;
                 }
             }
+        }
+        else
+        {
+            Tire1.GetComponent<Rotate_Myself>().enabled = false;
+            Tire2.GetComponent<Rotate_Myself>().enabled = false;
+            Tire3.GetComponent<Rotate_Myself>().enabled = false;
+            Tire4.GetComponent<Rotate_Myself>().enabled = false;
         }
     }
 }
