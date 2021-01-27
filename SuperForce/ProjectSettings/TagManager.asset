@@ -9,6 +9,10 @@ TagManager:
   - Player_Grenade
   - Gem
   - Enemy_Bullet
+  - Enemy_Tank
+  - Enemy_Car
+  - Healthpack
+  - Player_Bullet
   layers:
   - Default
   - TransparentFX
@@ -18,8 +22,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Radar
+  - Map
   - 
   - 
   - 
