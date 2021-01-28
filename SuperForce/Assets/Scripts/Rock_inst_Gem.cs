@@ -24,7 +24,7 @@ public class Rock_inst_Gem : MonoBehaviour
         {
             Random_Num = Random.Range(0, 5);
             //print(Random_Num);
-            if(Random_Num == 0)
+            if(Random_Num <= 1)
                 Instantiate(Gem, Gem_Point.transform.position, Gem_Point.transform.rotation);
         }
     }

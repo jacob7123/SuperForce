@@ -13,6 +13,8 @@ TagManager:
   - Enemy_Car
   - Healthpack
   - Player_Bullet
+  - Enery_Point
+  - Enemy_Point
   layers:
   - Default
   - TransparentFX

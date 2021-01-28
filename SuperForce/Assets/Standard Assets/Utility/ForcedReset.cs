@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
-using UnityEditor.UI;
+using UnityEngine.UI;
+//using UnityEditor.UI;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
 
